@@ -1,0 +1,1 @@
+This is supervised learning model to predict Students Placement
