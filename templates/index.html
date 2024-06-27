@@ -7,23 +7,44 @@
         <h1>Student Recruitment Prediction</h1>
         <form action="/predict" method="post">
             <label for="gender">Gender:</label>
-            <input type="number" id="gender" name="gender" required style="background-color: #0a0a0a; color: #f8f407;"><br><br>
+            <select id="gender" name="gender" required style="background-color: #0a0a0a; color: #f8f407;">
+                <option value="Male" style="background-color: #5f5e5e; color: #07f0f8;">Male</option>
+                <option value="Female" style="background-color: #5f5e5e; color: #07f0f8;">Female</option>
+            </select><br><br>
+
             <label for="ssc_p">SSC Percentage:</label>
             <input type="number" id="ssc_p" name="ssc_p" required style="background-color: #0a0a0a; color: #f8f407;"><br><br>
             <label for="hsc_p">HSC Percentage:</label>
             <input type="number" id="hsc_p" name="hsc_p" required style="background-color: #0a0a0a; color: #f8f407;"><br><br>
-            <label for="hsc_s">HSC Stream:</label>
-            <input type="number" id="hsc_s" name="hsc_s" required style="background-color: #0a0a0a; color: #f8f407;"><br><br>
+            
+            <label for="hsc_s">HSC Specialization:</label>
+            <select id="hsc_s" name="hsc_s" required style="background-color: #0a0a0a; color: #f8f407;">
+                <option value="Science" style="background-color: #5f5e5e; color: #07f0f8;">Science</option>
+                <option value="Commerce" style="background-color: #5f5e5e; color: #07f0f8;">Commerce</option>
+                <option value="Arts" style="background-color: #5f5e5e; color: #07f0f8;">Arts</option>
+            </select><br><br>
+
             <label for="degree_p">Degree Percentage:</label>
             <input type="number" id="degree_p" name="degree_p" required style="background-color: #0a0a0a; color: #f8f407;"><br><br>
+            
             <label for="degree_t">Degree Type:</label>
-            <input type="number" id="degree_t" name="degree_t" required style="background-color: #0a0a0a; color: #f8f407;"><br><br>
+            <select id="degree_t" name="degree_t" required style="background-color: #0a0a0a; color: #f8f407;">
+                <option value="Sci&Tech" style="background-color: #5f5e5e; color: #07f0f8;">Sci&Tech</option>
+                <option value="Comm&Mgmt" style="background-color: #5f5e5e; color: #07f0f8;">Comm&Mgmt</option>
+                <option value="Others" style="background-color: #5f5e5e; color: #07f0f8;">Others</option>
+            </select><br><br>
+            
             <label for="workex">Work Experience:</label>
             <input type="number" id="workex" name="workex" required style="background-color: #0a0a0a; color: #f8f407;"><br><br>
             <label for="etest_p">E-test Percentage:</label>
             <input type="number" id="etest_p" name="etest_p" required style="background-color: #0a0a0a; color: #f8f407;"><br><br>
+            
             <label for="specialisation">Specialization:</label>
-            <input type="number" id="specialisation" name="specialisation" required style="background-color: #0a0a0a; color: #f8f407;"><br><br>
+            <select id="specialisation" name="specialisation" required style="background-color: #0a0a0a; color: #f8f407;">
+                <option value="Mkt&Fin" style="background-color: #5f5e5e; color: #07f0f8;">Mkt&Fin</option>
+                <option value="Mkt&HR" style="background-color: #5f5e5e; color: #07f0f8;">Mkt&HR</option>
+            </select><br><br>
+
             <label for="mba_p">MBA Percentage:</label>
             <input type="number" id="mba_p" name="mba_p" required style="background-color: #0a0a0a; color: #f8f407;"><br><br>
             <label for="model">Select Model:</label>
